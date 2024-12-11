@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon-32x32.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Script -->
+    <script src="src/main.js" defer></script>
+    <!-- Title -->
+    <title>Newsletter Sign Up</title>
+</head>
+<body>
+    <div class="desktop-wrapper" id="desktop-wrapper">
+        <picture>
+            <source
+                media="(min-width: 1024px)"
+                srcset="/assets/images/illustration-sign-up-desktop.svg"
+            >
+            <img class="top-img" src="/assets/images/illustration-sign-up-mobile.svg">
+        </picture>
+        <div class="wrapper" id="wrapper">
+            <header class="wrapper-header">
+                <h1 class="wrapper-title">Stay updated!</h1>
+                <p class="wrapper-para">Join 60,000+ product managers receiving monthly updates on:</p>
+            </header>
+            <ul class="wrapper-list">
+                <li class="wrapper-item">Product discovery and building what matters</li>
+                <li class="wrapper-item">Measuring to ensure updates are a success</li>
+                <li class="wrapper-item">And much more!</li>
+            </ul>
+            <div class="wrapper-submission">
+                <div class="wrapper-submission-header" id="wrapper-submission-header">
+                    <h2 class="wrapper-submission-title">Email address</h2>
+                    <p class="wrapper-submission-title title-invalid" id="title-invalid">Valid email required</p>
+                </div>
+                <form class="wrapper-form" id="wrapper-form">
+                    <input class="wrapper-input" id="wrapper-input" type="text" placeholder="email@company.com">
+                    <button class="btn" id="wrapper-submission-btn" form="submit">Subscribe to monthly newsletter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+        <div class="mobile-confirmation-wrapper" id="mobile-confirmation-wrapper">
+            <div class="mobile-confirmation-header">
+                <svg class="mobile-confirmation-img" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+                <h1 class="mobile-confirmation-title">Thanks for subscribing!</h1>
+                <p class="mobile-confirmation-para">A confirmation email has been sent to <strong id="purchasing-email" style="font-weight: 700;"></strong> Please open it and click the button inside to confirm your subscription</p>
+            </div>
+            <button class="mobile-confirmation-btn btn" id="mobile-confirmation-btn">Dismiss message</button>
+        </div>
+</body>
+</html>
